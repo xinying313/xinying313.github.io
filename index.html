@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Xin Ying — Data Engineering & Code</title>
+    <title>Lee Xin Ying — Welcome to My E-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -173,7 +173,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 1.75rem;
+            gap: 1.5rem;
         }
 
         .nav-links a {
@@ -215,7 +215,7 @@
 
         /* Creative Bento Hero */
         .hero {
-            padding: 4.25rem 0 3.25rem;
+            padding: 4rem 0 3rem;
             display: grid;
             grid-template-columns: 1.3fr 0.9fr;
             gap: 2rem;
@@ -245,20 +245,20 @@
             background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet), var(--accent-pink), var(--accent-amber));
         }
 
-        .status-pill {
+        .welcome-banner {
             display: inline-flex;
             align-items: center;
             gap: 0.55rem;
             width: fit-content;
-            background: linear-gradient(90deg, rgba(16, 185, 129, 0.16), rgba(34, 211, 238, 0.16));
-            border: 1px solid rgba(16, 185, 129, 0.35);
-            color: var(--accent-emerald);
-            padding: 0.38rem 0.95rem;
+            background: linear-gradient(90deg, rgba(34, 211, 238, 0.16), rgba(168, 85, 247, 0.16), rgba(244, 63, 94, 0.16));
+            border: 1px solid rgba(168, 85, 247, 0.35);
+            color: var(--text-primary);
+            padding: 0.42rem 1rem;
             border-radius: 999px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.78rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.35rem;
         }
 
         .pulse-dot {
@@ -278,9 +278,9 @@
 
         .hero h1 {
             font-family: 'Outfit', sans-serif;
-            font-size: 3.1rem;
+            font-size: 3rem;
             font-weight: 800;
-            line-height: 1.1;
+            line-height: 1.12;
             letter-spacing: -0.03em;
             margin-bottom: 0.85rem;
         }
@@ -477,11 +477,11 @@
 
         /* Section Titles */
         section {
-            padding: 3rem 0;
+            padding: 2.85rem 0;
         }
 
         .section-heading {
-            margin-bottom: 1.85rem;
+            margin-bottom: 1.75rem;
         }
 
         .eyebrow {
@@ -503,8 +503,94 @@
             margin-top: 0.2rem;
         }
 
-        /* Academic Journey Card */
-        .journey-card {
+        /* About Me Bento Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 0.85fr;
+            gap: 1.5rem;
+        }
+
+        .about-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(14px);
+            border-radius: 22px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-violet), var(--accent-pink), var(--accent-amber));
+        }
+
+        .about-card p {
+            color: var(--text-secondary);
+            font-size: 0.98rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-highlights {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(14px);
+            border-radius: 22px;
+            padding: 1.85rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-highlights::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald));
+        }
+
+        .highlight-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 0.9rem 1.1rem;
+        }
+
+        .highlight-item span {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.2rem;
+        }
+
+        .highlight-item:nth-child(1) span { color: var(--accent-cyan); }
+        .highlight-item:nth-child(2) span { color: var(--accent-pink); }
+        .highlight-item:nth-child(3) span { color: var(--accent-amber); }
+
+        .highlight-item strong {
+            font-size: 0.94rem;
+            color: var(--text-primary);
+        }
+
+        /* Academic Section Card */
+        .academic-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
             backdrop-filter: blur(14px);
@@ -519,7 +605,7 @@
             overflow: hidden;
         }
 
-        .journey-card::before {
+        .academic-card::before {
             content: "";
             position: absolute;
             left: 0;
@@ -529,16 +615,24 @@
             background: linear-gradient(180deg, var(--accent-cyan), var(--accent-emerald));
         }
 
-        .journey-card h3 {
+        .academic-card h3 {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.38rem;
+            font-size: 1.4rem;
             margin-bottom: 0.25rem;
         }
 
-        .journey-role {
+        .academic-degree {
             color: var(--accent-emerald);
             font-weight: 700;
-            margin-bottom: 1rem;
+            font-size: 1.02rem;
+            margin-bottom: 0.45rem;
+        }
+
+        .academic-desc {
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+            margin-bottom: 1.1rem;
+            max-width: 660px;
         }
 
         .pill-wrap {
@@ -562,12 +656,13 @@
         .year-badge {
             font-family: 'JetBrains Mono', monospace;
             font-weight: 700;
-            font-size: 0.9rem;
-            padding: 0.6rem 1.1rem;
+            font-size: 0.88rem;
+            padding: 0.65rem 1.15rem;
             border-radius: 14px;
             background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(34, 211, 238, 0.18));
             color: var(--accent-emerald);
             border: 1px solid rgba(16, 185, 129, 0.35);
+            text-align: center;
         }
 
         /* 3-Column Color-Coded Toolkit Grid */
@@ -847,7 +942,8 @@
         }
 
         @media (max-width: 860px) {
-            .hero {
+            .hero,
+            .about-grid {
                 grid-template-columns: 1fr;
             }
             .toolkit-grid,
@@ -855,7 +951,7 @@
                 grid-template-columns: 1fr;
             }
             .hero h1 {
-                font-size: 2.4rem;
+                font-size: 2.35rem;
             }
             .nav-links a {
                 display: none;
@@ -874,7 +970,8 @@
         <div class="nav-inner">
             <a href="#" class="logo"><span class="logo-dot"></span> xinying.dev</a>
             <div class="nav-links">
-                <a href="#journey">Journey</a>
+                <a href="#about">About Me</a>
+                <a href="#academic">Academic</a>
                 <a href="#toolkit">Toolkit</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -888,19 +985,19 @@
         <section class="hero">
             <div class="hero-main">
                 <div>
-                    <div class="status-pill">
+                    <div class="welcome-banner">
                         <span class="pulse-dot"></span>
-                        Building with Data &amp; Code @ UTM
+                        Welcome to My E-Portfolio
                     </div>
-                    <h1>Turning raw data into <span class="aurora-text">clear stories &amp; smart apps.</span></h1>
+                    <h1>Hi, I'm Lee Xin Ying — turning data into <span class="aurora-text">clear stories &amp; smart apps.</span></h1>
                     <div class="typing-wrapper" id="typingText">Data Engineering Undergraduate</div>
                     <p class="hero-story">
-                        I'm <strong>Lee Xin Ying</strong>, a Computer Science (Data Engineering) student at Universiti Teknologi Malaysia. I love blending analytical thinking with clean software logic—from hackathon web apps to structured C++ systems.
+                        Explore my academic journey, technical skills, and hands-on projects in Data Engineering and software development at Universiti Teknologi Malaysia.
                     </p>
                 </div>
 
                 <div class="cta-group">
-                    <a href="#projects" class="btn btn-glow">See My Work &rarr;</a>
+                    <a href="#about" class="btn btn-glow">Explore Portfolio &rarr;</a>
                     <a href="https://www.linkedin.com/in/lee-xin-ying-xy27g/" target="_blank" class="btn btn-linkedin">
                         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
                         LinkedIn
@@ -938,16 +1035,55 @@
             </aside>
         </section>
 
-        <!-- Journey / Education Section -->
-        <section id="journey" class="reveal">
+        <!-- 01 / About Me Section -->
+        <section id="about" class="reveal">
             <div class="section-heading">
-                <span class="eyebrow">01 / Academic Foundation</span>
-                <h2>Where I'm Leveling Up</h2>
+                <span class="eyebrow">01 / Get To Know Me</span>
+                <h2>About Me</h2>
             </div>
-            <div class="journey-card">
+            <div class="about-grid">
+                <div class="about-card">
+                    <p>
+                        Hello and welcome to my e-portfolio! I am <strong>Lee Xin Ying</strong>, an undergraduate student pursuing a <strong>Bachelor of Computer Science (Data Engineering)</strong> at Universiti Teknologi Malaysia (UTM).
+                    </p>
+                    <p>
+                        I enjoy bridging data analytics and software development—whether that means structuring clean C++ program logic, querying databases with SQL, designing interactive dashboards in Google Looker Studio, or collaborating with teammates during hackathons to build practical web applications.
+                    </p>
+                    <p>
+                        Outside of coursework, I love exploring new tools, sharpening my problem-solving skills, and turning ideas into working prototypes.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span>Core Focus</span>
+                        <strong>Data Engineering, Analytics &amp; Software Logic</strong>
+                    </div>
+                    <div class="highlight-item">
+                        <span>Location &amp; Campus</span>
+                        <strong>Universiti Teknologi Malaysia, Johor Bahru</strong>
+                    </div>
+                    <div class="highlight-item">
+                        <span>What Drives Me</span>
+                        <strong>Continuous Learning &amp; Team Hackathons</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 / Academic Section -->
+        <section id="academic" class="reveal">
+            <div class="section-heading">
+                <span class="eyebrow">02 / Education &amp; Coursework</span>
+                <h2>Academic</h2>
+            </div>
+            <div class="academic-card">
                 <div>
                     <h3>Universiti Teknologi Malaysia (UTM)</h3>
-                    <p class="journey-role">Bachelor of Computer Science (Data Engineering)</p>
+                    <p class="academic-degree">Bachelor of Computer Science (Data Engineering)</p>
+                    <p class="academic-desc">
+                        Building a strong foundation in programming techniques, structured data management, analytical reporting, and collaborative software engineering.
+                    </p>
                     <div class="pill-wrap">
                         <span class="course-pill">Programming Technique (C++)</span>
                         <span class="course-pill">Database &amp; SQL</span>
@@ -955,14 +1091,14 @@
                         <span class="course-pill">Problem Solving</span>
                     </div>
                 </div>
-                <div class="year-badge">2026 / 2027</div>
+                <div class="year-badge">Session 2026 / 2027</div>
             </div>
         </section>
 
-        <!-- Color-Coded Technical Stack -->
+        <!-- 03 / Color-Coded Technical Stack -->
         <section id="toolkit" class="reveal">
             <div class="section-heading">
-                <span class="eyebrow">02 / Technical Stack</span>
+                <span class="eyebrow">03 / Technical Stack</span>
                 <h2>My Creative &amp; Data Toolkit</h2>
             </div>
             <div class="toolkit-grid">
@@ -999,10 +1135,10 @@
             </div>
         </section>
 
-        <!-- Featured Projects -->
+        <!-- 04 / Featured Projects -->
         <section id="projects" class="reveal">
             <div class="section-heading">
-                <span class="eyebrow">03 / Selected Works</span>
+                <span class="eyebrow">04 / Selected Works</span>
                 <h2>Things I've Built</h2>
             </div>
 
@@ -1049,10 +1185,10 @@
             </div>
         </section>
 
-        <!-- Creative Contact Section -->
+        <!-- 05 / Creative Contact Section -->
         <section id="contact" class="reveal">
             <div class="connect-banner">
-                <span class="eyebrow">04 / Let's Collaborate</span>
+                <span class="eyebrow">05 / Let's Collaborate</span>
                 <h2>Got a project, hackathon, or data idea?</h2>
                 <p>I'm always excited to connect with fellow builders, teammates, and mentors in Data Engineering and software development.</p>
                 <div class="connect-actions">
@@ -1081,6 +1217,7 @@
 
         // Typing Animation
         const roles = [
+            "Welcome to My E-Portfolio!",
             "Data Engineering Student @ UTM",
             "Python, SQL & C++ Builder",
             "Hackathon Collaborator & Problem Solver"
